@@ -98,16 +98,16 @@
           <div class="filters">
         <h1 class="title visually-hidden">portfolio</h1>
         <ul class="filters-list filters__filters-list list">
-            <li class="filters-list__item"><button class="button-filters" type="button">Все</button></li>
-            <li class="filters-list__item"><button class="button-filters" type="button">Веб-сайты</button></li>
-            <li class="filters-list__item"><button class="button-filters" type="button">Приложения</button></li>
-            <li class="filters-list__item"><button class="button-filters" type="button">Дизайн</button></li>
-            <li class="filters-list__item"><button class="button-filters" type="button">Маркетинг</button></li>
+            <li  class="filters-list__item"><button data-filter="all" class="button-filters " type="button">Все</button></li>
+            <li class="filters-list__item"><button data-filter="веб-сайты" class="button-filters" type="button">Веб-сайты</button></li>
+            <li data-filter="приложения" class="filters-list__item"><button data-filter="приложения" class="button-filters" type="button">Приложения</button></li>
+            <li data-filter="дизайн" class="filters-list__item"><button data-filter="дизайн" class="button-filters" type="button">Дизайн</button></li>
+            <li data-filter="маркетинг" class="filters-list__item"><button data-filter="маркетинг" class="button-filters" type="button">Маркетинг</button></li>
         </ul>  </div>
 
         <div class="project">
         <ul class="project-list list">
-          <li class="project-list__item "> 
+          <li class="project-list__item card веб-сайты"> 
             <a class="project-list__link link" href="">
               <div class="project-list__thumb">
                 <picture>
@@ -145,7 +145,7 @@
             </div></a>
           </li>
           
-          <li class="project-list__item ">
+          <li class="project-list__item card дизайн">
             <a class="project-list__link link" href="">
               <div class="project-list__thumb">
                 <picture>
@@ -183,7 +183,7 @@
           </div></a>
           </li>
 
-          <li class="project-list__item ">
+          <li class="project-list__item card приложения">
              
             <a class="project-list__link link" href="">
               <div class="project-list__thumb">
@@ -222,7 +222,7 @@
           </div></a>
           </li>
 
-          <li class="project-list__item ">
+          <li class="project-list__item card маркетинг">
             <a class="project-list__link link" href="">
               <div class="project-list__thumb">
                 <picture>
@@ -260,7 +260,7 @@
           </div></a>
           </li>
 
-          <li class="project-list__item ">
+          <li class="project-list__item card приложения">
             <a class="project-list__link link" href="">
               <div class="project-list__thumb">
                 <picture>
@@ -298,7 +298,7 @@
           </div></a>
           </li>
 
-          <li class="project-list__item ">
+          <li class="project-list__item card веб-сайты">
             <a class="project-list__link link" href="">
               <div class="project-list__thumb">
                 <picture>
@@ -338,7 +338,7 @@
 
 
           
-          <li class="project-list__item ">
+          <li class="project-list__item card дизайн">
             <a class="project-list__link link" href="">
               <div class="project-list__thumb">
                 <picture>
@@ -377,7 +377,7 @@
           </div></a>
           </li>
 
-          <li class="project-list__item ">
+          <li class="project-list__item card маркетинг">
             <a class="project-list__link link" href="">
               <div class="project-list__thumb">
                 <picture>
@@ -415,7 +415,7 @@
           </div></a>
           </li>
 
-          <li class="project-list__item ">
+          <li class="project-list__item card приложения">
             <a class="project-list__link link" href="">
               <div class="project-list__thumb">
                 <picture>
@@ -532,5 +532,6 @@
     </footer>
     
     <script defer src="js/mobile-menu.js"></script>
+    <script src="js/filter.js"></script>
 </body>
 </html>
