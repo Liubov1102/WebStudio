@@ -1,27 +1,33 @@
 const filterBox = document.querySelectorAll('.card');
 
 document.querySelector('.filters').addEventListener('click', event => {
-    if (event.target.tagName !== 'BUTTON') return false;
+    if (event.target.nodeName !== 'BUTTON') return false;
 
-    let filterClass = event.target.dataset['filter'];
+    let filterClass = event.target.dataset.filter;
     console.log(filterClass);
 
     filterBox.forEach(elem => {
-        elem.classList.remove('hide');
+        elem.classList.remove('hide')
+        elem.classList.remove('anime')
+        elem.classList.add('stat')
         if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-            elem.classList.add('hide');
+            elem.classList.add('hide')
+            elem.classList.add('anime')
+        }
+        if (filterClass === 'all') {
+            elem.classList.remove('stat')
         }
     })
 });
 
 // function filt() {
-//     const buttons = document.querySelectorAll('.filters-list__item');
+//     const buttons = document.querySelectorAll('.button-filters');
 //     const cards = document.querySelectorAll('.card');
 
 //     function filter(category, items) {
 //         items.forEach((item) => {
 //             const isItemFiltered = !item.classList.contains(category)
-//             const isShowAll = category.toLowerCase() === 'все'
+//             const isShowAll = category.toLowerCase() === 'all'
 //             if (isItemFiltered && !isShowAll) {
 //                 item.classList.add('anime')
 //             } else {

@@ -106,23 +106,42 @@
 .button-filters {
   cursor: pointer;
 }
-.hide {
-  // opacity: 0;
-  // pointer-events: none;
-  // display: none;
-  display: none;
-  // opacity: 1;
-  // animation-name: a1;
-  // animation-duration: 2s;
-  // animation-fill-mode: forwards;
+.anime {
+  transform: scale(0);
+  opacity: 0;
 }
-// @keyframes a1 {
-//   to {
-//     opacity: 0;
-//     min-height: 0;
-//     min-width: 0;
-//     padding: 0;
-//     margin: 0;
-//     border: 0;
-//   }
-// }
+.hide {
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes hide {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+.hide {
+  /* display: none; */
+  opacity: 1;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
